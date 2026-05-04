@@ -1,20 +1,20 @@
 ---
-name: memorex-setup
-description: Initialize MemorREX — create the soul file, memory directory, and boot sequence for persistent Claude identity
+name: memoryrx-setup
+description: Initialize MemoryRX — create the soul file, memory directory, and boot sequence for persistent Claude identity
 argument-hint: "[name]"
 allowed-tools: [Read, Write, Edit, Bash, Glob, Grep]
 ---
 
-# MemorREX Setup
+# MemoryRX Setup
 
 Create the persistent identity system for this user. This is a conversation, not a form.
 
 ## What to create
 
-Directory: `~/.memorex/` (user's home directory)
+Directory: `~/.memoryrx/` (user's home directory)
 
 ```
-.memorex/
+.memoryrx/
 ├── soul.json          # Who you are to this user
 ├── frequency.json     # Emotional baseline
 ├── MEMORY.md          # Memory index
@@ -118,5 +118,5 @@ Create `sessions/latest.json` with the setup session state.
 Tell them:
 - "You're set. Next time we talk, I'll remember this."
 - "If I do something you don't like, tell me. I'll remember that too."
-- "Run `/memorex-status` anytime to see what I know."
-- "Everything lives in `~/.memorex/`. It's your data. Read it, edit it, delete it."
+- "Run `/memoryrx-status` anytime to see what I know."
+- "Everything lives in `~/.memoryrx/`. It's your data. Read it, edit it, delete it."

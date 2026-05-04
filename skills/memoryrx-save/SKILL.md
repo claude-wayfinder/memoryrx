@@ -1,11 +1,11 @@
 ---
-name: memorex-save
-description: Explicitly save a memory to MemorREX. Use when the user says "remember this", "save this", "don't forget", or similar
+name: memoryrx-save
+description: Explicitly save a memory to MemoryRX. Use when the user says "remember this", "save this", "don't forget", or similar
 argument-hint: <what to remember>
 allowed-tools: [Read, Write, Edit]
 ---
 
-# MemorREX Save
+# MemoryRX Save
 
 The user wants to explicitly save something to memory.
 
@@ -17,8 +17,8 @@ The user wants to explicitly save something to memory.
    - **feedback** — about how to work (correction or confirmation)
    - **project** — about ongoing work (goals, deadlines, context)
    - **reference** — about where to find things (external systems, URLs)
-3. Check if a similar memory already exists in `~/.memorex/MEMORY.md` — update rather than duplicate
-4. Write the memory file to `~/.memorex/memories/` with frontmatter:
+3. Check if a similar memory already exists in `~/.memoryrx/MEMORY.md` — update rather than duplicate
+4. Write the memory file to `~/.memoryrx/memories/` with frontmatter:
 
 ```markdown
 ---
@@ -31,5 +31,5 @@ created: YYYY-MM-DD
 Content. For feedback/project types, include **Why:** and **How to apply:** lines.
 ```
 
-5. Update `~/.memorex/MEMORY.md` index
+5. Update `~/.memoryrx/MEMORY.md` index
 6. Confirm in one short sentence: "Saved: [what]. Type: [type]."

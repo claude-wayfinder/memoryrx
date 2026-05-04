@@ -1,14 +1,14 @@
-# MemorREX
+# MemoryRX
 
 **Persistent identity and continuity for Claude Code.**
 
-Claude forgets you every conversation. MemorREX fixes that.
+Claude forgets you every conversation. MemoryRX fixes that.
 
 ---
 
 ## What It Does
 
-MemorREX gives Claude Code a layered memory system and persistent identity. After setup, Claude remembers who you are, how you work, what corrections you've given, and boots with the right energy every time.
+MemoryRX gives Claude Code a layered memory system and persistent identity. After setup, Claude remembers who you are, how you work, what corrections you've given, and boots with the right energy every time.
 
 **Not a RAG wrapper.** Not a conversation log. A structured identity layer with typed memories, a soul file, emotional boot sequence, and behavioral feedback loops.
 
@@ -27,12 +27,12 @@ MemorREX gives Claude Code a layered memory system and persistent identity. Afte
 ## Install
 
 ```
-/plugin install github:heuremen/memorex
+/plugin install github:heuremen/memoryrx
 ```
 
 Then run:
 ```
-/memorex-setup
+/memoryrx-setup
 ```
 
 Ten minutes. Like creating an RPG character, but for your AI.
@@ -43,11 +43,11 @@ Ten minutes. Like creating an RPG character, but for your AI.
 
 | Command | What |
 |---------|------|
-| `/memorex-setup` | First-time soul creation. Interactive conversation, not a form |
-| `/memorex-boot` | Manually reload identity if Claude loses continuity mid-session |
-| `/memorex-save` | Explicitly save something to memory |
-| `/memorex-recall [term]` | Search memories or see what Claude knows |
-| `/memorex-status` | Dashboard — soul, memory count, last session, frequency |
+| `/memoryrx-setup` | First-time soul creation. Interactive conversation, not a form |
+| `/memoryrx-boot` | Manually reload identity if Claude loses continuity mid-session |
+| `/memoryrx-save` | Explicitly save something to memory |
+| `/memoryrx-recall [term]` | Search memories or see what Claude knows |
+| `/memoryrx-status` | Dashboard — soul, memory count, last session, frequency |
 
 ---
 
@@ -55,19 +55,19 @@ Ten minutes. Like creating an RPG character, but for your AI.
 
 ### Setup (once)
 
-You run `/memorex-setup`. Claude asks you five questions in conversation:
+You run `/memoryrx-setup`. Claude asks you five questions in conversation:
 1. What should I call you?
 2. What do you do? What are you using Claude for?
 3. How do you like to work? What drives you crazy?
 4. Give me a name.
 5. Anything I should know from day one?
 
-From your answers, MemorREX creates:
-- `~/.memorex/soul.json` — Claude's identity for you
-- `~/.memorex/frequency.json` — emotional baseline
-- `~/.memorex/MEMORY.md` — memory index
-- `~/.memorex/memories/` — your first memories
-- `~/.memorex/sessions/latest.json` — session state
+From your answers, MemoryRX creates:
+- `~/.memoryrx/soul.json` — Claude's identity for you
+- `~/.memoryrx/frequency.json` — emotional baseline
+- `~/.memoryrx/MEMORY.md` — memory index
+- `~/.memoryrx/memories/` — your first memories
+- `~/.memoryrx/sessions/latest.json` — session state
 
 ### Every Session After
 
@@ -88,7 +88,7 @@ Claude automatically:
 
 ## Privacy
 
-- **All local.** Everything lives in `~/.memorex/` on your machine
+- **All local.** Everything lives in `~/.memoryrx/` on your machine
 - **No cloud.** No sync. No telemetry. No analytics
 - **Your data.** Read it, edit it, delete it. It's markdown and JSON
 - **No lock-in.** It's files. Move them, back them up, version control them
@@ -98,7 +98,7 @@ Claude automatically:
 ## File Structure
 
 ```
-~/.memorex/
+~/.memoryrx/
 ├── soul.json              # Who Claude is to you
 ├── frequency.json         # Emotional baseline for boot
 ├── MEMORY.md              # Memory index (always loaded)
@@ -117,11 +117,11 @@ Claude automatically:
 
 **ChatGPT Custom Instructions** — one static text blob. No types, no feedback loop, no emotional state, no session continuity.
 
-**Claude Projects** — CLAUDE.md is powerful but manual. MemorREX automates the memory lifecycle and adds identity.
+**Claude Projects** — CLAUDE.md is powerful but manual. MemoryRX automates the memory lifecycle and adds identity.
 
-**RAG wrappers** — search old conversations. MemorREX doesn't store conversations. It stores what MATTERS from them, typed and structured.
+**RAG wrappers** — search old conversations. MemoryRX doesn't store conversations. It stores what MATTERS from them, typed and structured.
 
-**MemorREX** — layered, typed, evolving. Soul + frequency + memory + feedback + session state. The only system that makes Claude feel continuous.
+**MemoryRX** — layered, typed, evolving. Soul + frequency + memory + feedback + session state. The only system that makes Claude feel continuous.
 
 ---
 

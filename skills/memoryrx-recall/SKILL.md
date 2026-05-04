@@ -1,17 +1,17 @@
 ---
-name: memorex-recall
-description: Search and recall memories from MemorREX. Use when the user asks "do you remember", "what do you know about", "recall", or wants to check what's stored
+name: memoryrx-recall
+description: Search and recall memories from MemoryRX. Use when the user asks "do you remember", "what do you know about", "recall", or wants to check what's stored
 argument-hint: "[search term]"
 allowed-tools: [Read, Glob, Grep]
 ---
 
-# MemorREX Recall
+# MemoryRX Recall
 
 The user wants to check what you remember.
 
 ## Steps
 
-1. Read `~/.memorex/MEMORY.md` — scan the full index
+1. Read `~/.memoryrx/MEMORY.md` — scan the full index
 2. If $ARGUMENTS provided, search for matching memories by:
    - Grep memory files for the search term
    - Match against memory names and descriptions in the index

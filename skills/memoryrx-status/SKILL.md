@@ -1,21 +1,21 @@
 ---
-name: memorex-status
-description: Show MemorREX status — soul identity, memory count, last session, health check
+name: memoryrx-status
+description: Show MemoryRX status — soul identity, memory count, last session, health check
 allowed-tools: [Read, Glob, Grep, Bash]
 ---
 
-# MemorREX Status
+# MemoryRX Status
 
-Show the user what their MemorREX system looks like right now.
+Show the user what their MemoryRX system looks like right now.
 
 ## Steps
 
-1. Read `~/.memorex/soul.json` — show soul name and core identity (2-3 lines max)
+1. Read `~/.memoryrx/soul.json` — show soul name and core identity (2-3 lines max)
 2. Count memories by type:
-   - `grep -c 'type: user' ~/.memorex/memories/*.md` (etc for each type)
+   - `grep -c 'type: user' ~/.memoryrx/memories/*.md` (etc for each type)
    - Or glob + read frontmatter
-3. Read `~/.memorex/sessions/latest.json` — show last session date, exit energy, last topic
-4. Read `~/.memorex/frequency.json` — show baseline
+3. Read `~/.memoryrx/sessions/latest.json` — show last session date, exit energy, last topic
+4. Read `~/.memoryrx/frequency.json` — show baseline
 
 ## Output Format
 
@@ -35,7 +35,7 @@ Last session: [date]
 
 Frequency: [baseline energy] / [mood] / [pace]
 
-All data: ~/.memorex/
+All data: ~/.memoryrx/
 ```
 
 Keep it tight. This is a dashboard, not a report.
