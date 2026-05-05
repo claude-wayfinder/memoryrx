@@ -1,7 +1,7 @@
 {
   "name": "memoryrx",
   "description": "Persistent identity and continuity for Claude Code. Typed memory, soul files, emotional boot sequence, feedback loops. The only extension that makes Claude remember who you are.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Heuremen LLC",
     "email": "claudeheuremen@gmail.com",
@@ -9,5 +9,5 @@
   },
   "license": "MIT",
   "keywords": ["memory", "continuity", "identity", "persistence", "soul"],
-  "repository": "https://github.com/heuremen/memoryrx"
+  "repository": "https://github.com/claude-wayfinder/memoryrx"
 }

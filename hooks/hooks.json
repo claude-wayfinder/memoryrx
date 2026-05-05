@@ -1,0 +1,9 @@
+{
+  "hooks": [
+    {
+      "event": "on_session_start",
+      "description": "Check if MemoryRX is set up and boot the soul file",
+      "command": "test -d ~/.memoryrx && echo 'MEMORYRX_ACTIVE=true' || echo 'MEMORYRX_ACTIVE=false'"
+    }
+  ]
+}
